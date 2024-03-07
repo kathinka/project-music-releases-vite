@@ -1,7 +1,16 @@
+
+import { Header } from "./components/Header.jsx";
+import { Album } from "./components/Album.jsx";
 import data from "./data.json";
 
-console.log(data);
-
+console.log("json ;", data);
+//pass json data to  *mArray* in Album
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+	return (
+		<div className="app-wrap">
+			<Header />
+			<Album mArray={data} />
+		</div>
+	)
+}
+
